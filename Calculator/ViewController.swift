@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tapNumberButton(_ sender: UIButton) {
-        guard let numberValue = sender.title(for: .normal) else {return}
+        guard let numberValue = sender.title(for: .normal) else { return }
         if self.displayNumber.count < 9 {
             self.displayNumber += numberValue
             self.numberOutPutLabel.text = self.displayNumber

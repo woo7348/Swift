@@ -34,7 +34,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-eU-1Fc">
                                                 <rect key="frame" x="0.0" y="0.0" width="345" height="82.666666666666671"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-vF-LFK" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-vF-LFK" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="0.0" y="0.0" width="257.66666666666669" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
@@ -72,9 +72,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pWH-QY-Jed">
                                                 <rect key="frame" x="0.0" y="90.666666666666686" width="345" height="82.333333333333314"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-9P-TPX" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-9P-TPX" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="82.333333333333329"/>
-                                                        <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="X1b-9P-TPX" secondAttribute="height" id="aeX-qA-MMS"/>
                                                         </constraints>
@@ -90,7 +90,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSK-ea-1Q0"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-yF-bNn" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-yF-bNn" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="87.666666666666686" y="0.0" width="82.333333333333314" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -108,7 +108,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1t-dy-AlK"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-hF-Z3n" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-hF-Z3n" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="175" y="0.0" width="82.666666666666686" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -126,7 +126,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C8K-6b-9e6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPq-8U-FGF" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPq-8U-FGF" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="262.66666666666669" y="0.0" width="82.333333333333314" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -149,7 +149,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O4E-P6-sRp">
                                                 <rect key="frame" x="0.0" y="181" width="345" height="82.666666666666686"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrc-a0-dgq" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrc-a0-dgq" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -167,7 +167,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5vl-cp-nk8"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-8u-Qse" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-8u-Qse" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="87.666666666666686" y="0.0" width="82.333333333333314" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -185,7 +185,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9WQ-CI-xjh"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KG-vv-yRr" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KG-vv-yRr" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="175" y="0.0" width="82.666666666666686" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -203,7 +203,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15d-F6-64U"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-SP-KTs" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-SP-KTs" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="262.66666666666669" y="0.0" width="82.333333333333314" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -226,7 +226,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zMA-Vn-qpn">
                                                 <rect key="frame" x="0.0" y="271.66666666666663" width="345" height="82.333333333333314"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Z3-3HG" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Z3-3HG" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -244,7 +244,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wn-Di-KP6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-yb-DqR" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-yb-DqR" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="87.666666666666686" y="0.0" width="82.333333333333314" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -262,7 +262,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKn-6E-2aq"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-4D-VPd" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-4D-VPd" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="175" y="0.0" width="82.666666666666686" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.34346590909090902" green="0.34346590909090902" blue="0.34346590909090902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -280,7 +280,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2P-Xi-Inu"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNy-sN-X58" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNy-sN-X58" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="262.66666666666669" y="0.0" width="82.333333333333314" height="82.333333333333329"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -303,7 +303,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-Ua-2Mc">
                                                 <rect key="frame" x="0.0" y="362" width="345" height="82.666666666666686"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCc-Qf-9Sm" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCc-Qf-9Sm" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="0.0" y="0.0" width="170" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.38975694444444442" green="0.38975694444444442" blue="0.38975694444444442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
@@ -318,7 +318,7 @@
                                                             <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="euV-PP-cji"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-hR-Ft0" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-hR-Ft0" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="175" y="0.0" width="82.666666666666686" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.38975694444444442" green="0.38975694444444442" blue="0.38975694444444442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -334,10 +334,9 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="tapDotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OhM-1I-3o9"/>
-                                                            <action selector="tapNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ih7-vt-eeP"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97m-Hb-ajU" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97m-Hb-ajU" customClass="RoundButton" customModule="Calculator">
                                                         <rect key="frame" x="262.66666666666669" y="0.0" width="82.333333333333314" height="82.666666666666671"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -390,7 +389,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="numberOutPutLabel" destination="AIC-dH-8YM" id="MZV-ee-ZWf"/>
+                        <outlet property="numberOutPutLabel" destination="AIC-dH-8YM" id="HEN-w6-lOP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -398,6 +397,59 @@
             <point key="canvasLocation" x="114" y="-27"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2KG-vv-yRr">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
+        </designable>
+        <designable name="8gP-Mh-275">
+            <size key="intrinsicContentSize" width="33.333333333333336" height="50"/>
+        </designable>
+        <designable name="8mx-yb-DqR">
+            <size key="intrinsicContentSize" width="42" height="50"/>
+        </designable>
+        <designable name="97m-Hb-ajU">
+            <size key="intrinsicContentSize" width="43" height="50"/>
+        </designable>
+        <designable name="9bI-4D-VPd">
+            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
+        </designable>
+        <designable name="DCc-Qf-9Sm">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
+        </designable>
+        <designable name="DNy-sN-X58">
+            <size key="intrinsicContentSize" width="43" height="50"/>
+        </designable>
+        <designable name="DRr-yF-bNn">
+            <size key="intrinsicContentSize" width="43" height="50"/>
+        </designable>
+        <designable name="NZ7-hF-Z3n">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
+        </designable>
+        <designable name="RGM-vF-LFK">
+            <size key="intrinsicContentSize" width="64.666666666666671" height="50"/>
+        </designable>
+        <designable name="X1b-9P-TPX">
+            <size key="intrinsicContentSize" width="41.333333333333336" height="50"/>
+        </designable>
+        <designable name="ZPg-SP-KTs">
+            <size key="intrinsicContentSize" width="37.666666666666664" height="50"/>
+        </designable>
+        <designable name="hfg-Z3-3HG">
+            <size key="intrinsicContentSize" width="38.333333333333336" height="50"/>
+        </designable>
+        <designable name="kPq-8U-FGF">
+            <size key="intrinsicContentSize" width="44" height="50"/>
+        </designable>
+        <designable name="lMU-hR-Ft0">
+            <size key="intrinsicContentSize" width="31.333333333333332" height="50"/>
+        </designable>
+        <designable name="rrc-a0-dgq">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
+        </designable>
+        <designable name="vfx-8u-Qse">
+            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
