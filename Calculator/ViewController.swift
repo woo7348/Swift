@@ -16,25 +16,25 @@ enum Operation{
 }
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var numberOutPutLabel: UILabel!
+    
+    @IBOutlet weak var numberOutputLabel: UILabel!
     
     var displayNumber = "" //계산기 버튼을 누를때 마다 number OutputLabel에 표시되는 숫자를 가지고 있는 property
     var firstOperand = "" // 이전계산값을 저장하는 property
     var secondOperand = "" // 새롭게 입력된 값을 저장하는 property
     var result = "" // 게산의 결과값을 저장하는 property
-    var currentOperation : Operation = .unknown // 현재의 계산기에 어떤 연산자가 입력되어있는지 알 수 있게 연산자의 값을 저장하는 property
+    var currentOperation: Operation = .unknown // 현재의 계산기에 어떤 연산자가 입력되어있는지 알 수 있게 연산자의 값을 저장하는 property
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func tapNumberButton(_ sender: UIButton) {
-        guard let numberValue = sender.title(for: .normal) else { return }
+        guard let numberValue = sender.titleLabel?.text else { return }
         if self.displayNumber.count < 9 {
-            self.displayNumber += numberValue
-            self.numberOutPutLabel.text = self.displayNumber
+        self.displayNumber += numberValue
+        self.numberOutputLabel.text = self.displayNumber
         }
     }
     
@@ -58,6 +58,5 @@ class ViewController: UIViewController {
     
     @IBAction func tapEqualButton(_ sender: UIButton) {
     }
-    
 }
 
