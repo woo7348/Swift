@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var editButton: UIBarButtonItem! //storage 를 strong 선언한 이유: weak이면 왼쪽 navigation item을 done으로 바꿨을때 edit버튼이 메모리에서 헤재가 되어서 더이상 재사용 할수없게되기때문.
     @IBOutlet weak var tableView: UITableView!
+    var doneButton: UIBarButtonItem? // 옵셔널
     var tasks = [Task]() { //Task 타입의 배열을 초기화
         didSet {
             self.saveTasks()
@@ -19,12 +20,20 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTap))
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.loadTasks()
     }
+    
+    @objc func doneButtonTap(){
+        
+    } // objective-c와 호환성을 위한것으로 스위프트에서 정의한 메소드를 오브젝트-c에서도 인식하게 만들어준다
 
     @IBAction func tapEditButton(_ sender: UIBarButtonItem) {
+        guard !self.tasks.isEmpty else {return }
+        self.navigationItem.leftBarButtonItem = self.doneButton
+        self.tableView.setEditing(true, animated: true)
     }
     
     @IBAction func tapAddButton(_ sender: UIBarButtonItem) {
