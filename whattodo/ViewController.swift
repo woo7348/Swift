@@ -9,12 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var editButton: UIBarButtonItem! //storage 를 strong 선언한 이유: weak이면 왼쪽 navigation item을 done으로 바꿨을때 edit버튼이 메모리에서 헤재가 되어서 더이상 재사용 할수없게되기때문.
     @IBOutlet weak var tableView: UITableView!
-    var tasks = [Task]() //Task 타입의 배열을 초기화
-    
+    var tasks = [Task]() { //Task 타입의 배열을 초기화
+        didSet {
+            self.saveTasks()
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.loadTasks()
     }
 
     @IBAction func tapEditButton(_ sender: UIBarButtonItem) {
@@ -43,7 +50,25 @@ class ViewController: UIViewController {
         alert.addTextField(configurationHandler: { textfield in textfield.placeholder = "할 일을 입력해 주세요"})
         self.present(alert, animated: true, completion: nil)
     }
+    func saveTasks() {
+        let data = self.tasks.map { //배열에 있는 요소들을 dictionary 형태로 매핑
+            [ "title" : $0.title, // Key
+              "done" : $0.done // task intance 선언
+            ]
+        }
+        let userDefualts = UserDefaults.standard
+        userDefualts.set(data, forKey: "tasks")
+    } //set 메소드에 저장할 value와 key를 넣으면 userDefaults에 할일들이 저장되게된다.
     
+    func loadTasks(){
+        let userDefaults = UserDefaults.standard
+        guard let data = userDefaults.object(forKey: "tasks") as? [[String: Any]] else {return}
+        self.tasks = data.compactMap {
+            guard let title = $0["title"] as? String else { return nil }
+            guard let done = $0["done"] as? Bool else { return nil }
+            return Task(title: title, done: done)
+        }
+    }
 }
 
 
@@ -56,10 +81,24 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell" , for: indexPath)
         let task = self.tasks[indexPath.row] // task 상수 선언후 힐일들이 저장되어있는 배열에 indexpath.row 값으로 배열에 저장되어있는 할일 요소들을 가져온다. indexpath 에서 session이 0이고, row 가 0이면 가장 위에 보이는 셀의 위치를 의미한다.
         cell.textLabel?.text = task.title // task에 저장되어 있는 title이 cell에 textLabel에 표시된다는 뜻.
+        if task.done {
+            cell.accessoryType = .checkmark //task.done 프로퍼티가 true 이면 check mark
+        } else {
+            cell.accessoryType = .none // false 일때 accesorytype이 none
+        }
         return cell // return 값으로 cell 반환.
     }
+}
     // dequeReusableCell : 지정된 재사용 식별자에대한 재사용가능한 테이블 뷰 cell 객체를 반환을 하고 이를 테이블 뷰에 추가하는 역할을 하는 메소드
     // 여기서 지정된 재사용된 식별자는 withidentifier 를 뜻한다. withidentifier값을 가지고 재사용할 cell을 찾는다. 그리고 for 파라미터에는 indexpath를 넘겨주는데, 그 이유는 indexpath 위치에 해당 셀을 재사용하기 위함이다.
     // 셀을 재사용하는 이유 : 여러개의 셀을 각각 만들어서 각각 메모리를 할당하게되면 불필요한 메모리의 낭비가 심해지게된다.
     // How? : 현재볼수있는 화면에 n개의 셀을 볼수 있다면, 앱은 n개의 셀에대한 데이터만 메모리로드하게 되고, 스크롤을 내리게되면, n개의 셀을 재사용하게 되어 메모리에 로드하게된다. 스크롤을 내리면서 새로운 샐이 보이면, 기존의 셀 데이터는 reusable pool라는 곳에  큐가되어 들어가게되고, 나중에 해당 데이터를 다시 보게되면 deque로 p ool에서 나오게된다.
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var task = self.tasks[indexPath.row]
+        task.done = !task.done
+        self.tasks[indexPath.row] = task
+        self.tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
 }
