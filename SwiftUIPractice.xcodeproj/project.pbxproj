@@ -11,6 +11,7 @@
 		D19EA1C629878E9D00105CD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19EA1C529878E9D00105CD8 /* ContentView.swift */; };
 		D19EA1C829878E9F00105CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19EA1C729878E9F00105CD8 /* Assets.xcassets */; };
 		D19EA1CB29878E9F00105CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19EA1CA29878E9F00105CD8 /* Preview Assets.xcassets */; };
+		D19EA1D229878EB400105CD8 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19EA1D129878EB400105CD8 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D19EA1C529878E9D00105CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D19EA1C729878E9F00105CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D19EA1CA29878E9F00105CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D19EA1D129878EB400105CD8 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D19EA1C329878E9D00105CD8 /* SwiftUIPracticeApp.swift */,
 				D19EA1C529878E9D00105CD8 /* ContentView.swift */,
+				D19EA1D129878EB400105CD8 /* MyView.swift */,
 				D19EA1C729878E9F00105CD8 /* Assets.xcassets */,
 				D19EA1C929878E9F00105CD8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19EA1D229878EB400105CD8 /* MyView.swift in Sources */,
 				D19EA1C629878E9D00105CD8 /* ContentView.swift in Sources */,
 				D19EA1C429878E9D00105CD8 /* SwiftUIPracticeApp.swift in Sources */,
 			);
