@@ -22,10 +22,7 @@
                                     <constraint firstAttribute="height" constant="100" id="dKU-lF-6zb"/>
                                 </constraints>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-pD-3N1">
-                                <rect key="frame" x="72" y="351" width="248.66666666666663" height="4"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk4-UT-Epd">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk4-UT-Epd">
                                 <rect key="frame" x="48" y="262" width="296.66666666666669" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -35,16 +32,47 @@
                                 <rect key="frame" x="0.0" y="296" width="393" height="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="UgJ-bL-NI2">
+                                <rect key="frame" x="48" y="377" width="296.66666666666669" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3A-IT-Jot">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="61"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <connections>
+                                            <action selector="tapCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6a-1T-fRn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-g7-PSt">
+                                        <rect key="frame" x="188.33333333333334" y="0.0" width="108.33333333333334" height="61"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="시작"/>
+                                        <connections>
+                                            <action selector="tapToggleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnZ-EO-Ewc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-pD-3N1">
+                                <rect key="frame" x="72" y="351" width="248.66666666666663" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g4G-Hh-wXf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="2Ie-nV-Mbj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UgJ-bL-NI2" secondAttribute="trailing" constant="24" id="2Qj-2J-znU"/>
                             <constraint firstItem="f3r-pD-3N1" firstAttribute="top" secondItem="tk4-UT-Epd" secondAttribute="bottom" constant="30" id="BOO-SV-u10"/>
+                            <constraint firstItem="UgJ-bL-NI2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="IZf-Ml-UJd"/>
+                            <constraint firstItem="UgJ-bL-NI2" firstAttribute="top" secondItem="f3r-pD-3N1" secondAttribute="bottom" constant="24" id="Nty-Dl-LIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UgJ-bL-NI2" secondAttribute="bottom" constant="376" id="ULO-4Z-uiY"/>
+                            <constraint firstItem="UgJ-bL-NI2" firstAttribute="top" secondItem="f3r-pD-3N1" secondAttribute="bottom" constant="24" id="XYw-iZ-JRo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tk4-UT-Epd" secondAttribute="trailing" constant="24" id="Z4w-Tb-NWt"/>
                             <constraint firstItem="f3r-pD-3N1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZh-hn-9lI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UgJ-bL-NI2" secondAttribute="trailing" constant="24" id="dkC-0j-lAi"/>
                             <constraint firstItem="tk4-UT-Epd" firstAttribute="top" secondItem="g4G-Hh-wXf" secondAttribute="bottom" constant="80" id="fyX-b7-rmg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4G-Hh-wXf" secondAttribute="trailing" constant="87" id="fyo-fn-nEY"/>
+                            <constraint firstItem="UgJ-bL-NI2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="iVs-Ib-MaY"/>
                             <constraint firstItem="f3r-pD-3N1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="ixL-qx-NCF"/>
                             <constraint firstItem="tk4-UT-Epd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="j60-xH-0U5"/>
                             <constraint firstItem="g4G-Hh-wXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="nCM-zj-oLI"/>
@@ -52,6 +80,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3r-pD-3N1" secondAttribute="trailing" constant="48" id="wge-qx-q84"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="M3A-IT-Jot" id="XgD-Xh-sx2"/>
+                        <outlet property="datePicker" destination="VKP-bD-7ry" id="hvj-cT-x1q"/>
+                        <outlet property="imageView" destination="g4G-Hh-wXf" id="pSO-9J-lan"/>
+                        <outlet property="progressView" destination="f3r-pD-3N1" id="Wly-wJ-D01"/>
+                        <outlet property="timerLabel" destination="tk4-UT-Epd" id="dVS-L8-Rjj"/>
+                        <outlet property="toggleButton" destination="oBE-g7-PSt" id="sD9-DZ-oqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
