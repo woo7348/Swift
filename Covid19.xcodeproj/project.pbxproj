@@ -15,7 +15,7 @@
 		D1632155299A03A20005FBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1632153299A03A20005FBF0 /* Main.storyboard */; };
 		D1632157299A03A20005FBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1632156299A03A20005FBF0 /* Assets.xcassets */; };
 		D163215A299A03A20005FBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1632158299A03A20005FBF0 /* LaunchScreen.storyboard */; };
-		D1632162299A0D6C0005FBF0 /* CovidDetailViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632161299A0D6C0005FBF0 /* CovidDetailViewControllerTableViewController.swift */; };
+		D1632162299A0D6C0005FBF0 /* CovidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632161299A0D6C0005FBF0 /* CovidDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		D1632156299A03A20005FBF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1632159299A03A20005FBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D163215B299A03A20005FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1632161299A0D6C0005FBF0 /* CovidDetailViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		D1632161299A0D6C0005FBF0 /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
 		D525A32D932E988EF4B66DEC /* Pods-Covid19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19.debug.xcconfig"; path = "Target Support Files/Pods-Covid19/Pods-Covid19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 				D1632156299A03A20005FBF0 /* Assets.xcassets */,
 				D1632158299A03A20005FBF0 /* LaunchScreen.storyboard */,
 				D163215B299A03A20005FBF0 /* Info.plist */,
-				D1632161299A0D6C0005FBF0 /* CovidDetailViewControllerTableViewController.swift */,
+				D1632161299A0D6C0005FBF0 /* CovidDetailViewController.swift */,
 				D1511684299A4B25001B5C55 /* CityCovidOverView.swift */,
 			);
 			path = Covid19;
@@ -216,7 +216,7 @@
 				D163214E299A03A10005FBF0 /* AppDelegate.swift in Sources */,
 				D1511685299A4B25001B5C55 /* CityCovidOverView.swift in Sources */,
 				D1632150299A03A10005FBF0 /* SceneDelegate.swift in Sources */,
-				D1632162299A0D6C0005FBF0 /* CovidDetailViewControllerTableViewController.swift in Sources */,
+				D1632162299A0D6C0005FBF0 /* CovidDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
