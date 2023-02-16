@@ -38,8 +38,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-pE-dDI">
                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="60.666666666666664"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 확진자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-3e-tuM">
-                                                <rect key="frame" x="47.333333333333329" y="0.0" width="78" height="20.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 누적 확진자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-3e-tuM">
+                                                <rect key="frame" x="30.333333333333336" y="0.0" width="111.66666666666666" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -92,17 +92,17 @@
                     <connections>
                         <outlet property="newCaseLabel" destination="6Xa-GD-rcD" id="435-SG-q75"/>
                         <outlet property="pieChartView" destination="aXZ-Wj-Edg" id="CIT-5M-Ek5"/>
-                        <outlet property="totalCaseLabel" destination="6Xa-GD-rcD" id="7FU-Nc-yap"/>
+                        <outlet property="totalCaseLabel" destination="vd2-Js-NdY" id="3Zk-kL-eQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="-27"/>
         </scene>
-        <!--Covid Detail View Controller Table View Controller-->
+        <!--Covid Detail View Controller-->
         <scene sceneID="lRh-au-UEZ">
             <objects>
-                <tableViewController id="SU1-X6-MI6" customClass="CovidDetailViewControllerTableViewController" customModule="Covid19" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CovidDetailViewController" id="SU1-X6-MI6" customClass="CovidDetailViewController" customModule="Covid19" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Uqh-Uc-Zzb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

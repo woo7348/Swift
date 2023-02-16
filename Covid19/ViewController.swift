@@ -20,12 +20,72 @@ class ViewController: UIViewController {
             guard let self = self else {return}
             switch result{
             case let.success(result):
-                debugPrint("success \(result)")
+                self.configureStackView(koreaCovidOverview: result.korea) //라벨에 국내총 확진자수, 신규확진자수 표시
+                let covidOverviewList = self.makeCovidOverviewList(cityCovidOverview: result)
+                self.configureChatView(covidOverviewList: covidOverviewList)
+                
                 
             case let .failure(error):
                 debugPrint("error \(error)")
             }
         })
+    }
+    func makeCovidOverviewList(
+        cityCovidOverview: CityCovidOverview
+    ) -> [CovidOverview] {
+        return[
+            cityCovidOverview.seoul,
+            cityCovidOverview.busan,
+            cityCovidOverview.daegu,
+            cityCovidOverview.incheon,
+            cityCovidOverview.gwangju,
+            cityCovidOverview.daejeon,
+            cityCovidOverview.ulsan,
+            cityCovidOverview.sejong,
+            cityCovidOverview.gyeonggi,
+            cityCovidOverview.chungbuk,
+            cityCovidOverview.chungnam,
+            cityCovidOverview.gyeongbuk,
+            cityCovidOverview.gyeongnam,
+            cityCovidOverview.jeju,
+            cityCovidOverview.jeonbuk,
+            cityCovidOverview.jeonnam
+        ]
+    }
+    
+    func configureChatView(covidOverviewList: [CovidOverview]){
+        let entries = covidOverviewList.compactMap{ [weak self] overview -> PieChartDataEntry? in
+            guard let self = self else {return nil}
+            return PieChartDataEntry(value: self.removeFormatString(string: overview.newCase),
+                                     label: overview.countryName,
+                                     data: overview
+            )
+        }
+        let dataSet = PieChartDataSet(entries: entries, label: "코로나 발생 현황")
+        dataSet.sliceSpace = 1
+        dataSet.entryLabelColor = .black
+        dataSet.xValuePosition = .outsideSlice
+        dataSet.valueLinePart1OffsetPercentage = 0.8
+        dataSet.valueLinePart1Length = 0.2
+        dataSet.valueLinePart2Length = 0.3
+        
+        dataSet.colors = ChartColorTemplates.vordiplom() +
+        ChartColorTemplates.joyful() +
+        ChartColorTemplates.liberty() +
+        ChartColorTemplates.pastel() +
+        ChartColorTemplates.material()
+        self.pieChartView.data = PieChartData(dataSet: dataSet)
+    }
+    func removeFormatString(string: String) -> Double {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter.number(from: string)?.doubleValue ?? 0
+    }
+    
+    
+    func configureStackView(koreaCovidOverview: CovidOverview){
+        self.totalCaseLabel.text = "\(koreaCovidOverview.totalCase)명"
+        self.newCaseLabel.text = "\(koreaCovidOverview.newCase)명"
     }
     
     func fetchCovidOverview( //api를 요청하고 서버에서 json데이터를 응답 받거나 요청에 실패했을때, completionHandler (클로저)를 호출해 해당클로저를 정의하는 곳에 응답받은 데이터를 전달하고자 한다.
