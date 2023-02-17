@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     ){ // 요청이 성공하면 CityCovidOverview 열거형 연관값을 전달 받을수 있고, 두번째 generic 에는 요청에 실패하거나 에러사항이면 에러 객체가 열거형 연관값으로 전달되게 작성.
         let url = "https://api.corona-19.kr/korea/country/new/"
         let param = [
-            "serviceKey": "JSewAgaUYXPOfruKoxGbB8zCpiDlcZQ94"
+            "serviceKey": "####################"
         ]
         
         AF.request(url, method: .get, parameters: param)
