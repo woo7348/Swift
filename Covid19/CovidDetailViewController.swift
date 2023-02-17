@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CovidDetailViewControllerTableViewController: UITableViewController {
+class CovidDetailViewController: UITableViewController {
     
     @IBOutlet weak var newCaseCell: UITableViewCell!
     @IBOutlet weak var totalCaseCell: UITableViewCell!
@@ -29,7 +29,7 @@ class CovidDetailViewControllerTableViewController: UITableViewController {
         self.totalCaseCell.detailTextLabel?.text = "\(covidOverview.totalCase)명"
         self.recoveredCell.detailTextLabel?.text = "\(covidOverview.recovered)명"
         self.deathCell.detailTextLabel?.text = "\(covidOverview.death)명"
-        self.percentageCell.detailTextLabel?.text = "\(covidOverview.percentage)명"
+        self.percentageCell.detailTextLabel?.text = "\(covidOverview.percentage)%"
         self.overseasinflowCell.detailTextLabel?.text = "\(covidOverview.newFcase)명"
         self.regionalOutbreakCell.detailTextLabel?.text = "\(covidOverview.newCcase)명"
     }

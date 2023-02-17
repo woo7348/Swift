@@ -135,15 +135,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="60X-IY-jko" detailTextLabel="mam-an-uI5" style="IBUITableViewCellStyleValue1" id="sZL-q3-eJa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="60X-IY-jko" detailTextLabel="mam-an-uI5" style="IBUITableViewCellStyleValue1" id="sZL-q3-eJa" userLabel="totalCaseCell">
                                         <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sZL-q3-eJa" id="wnV-Vd-7M8">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="확진자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="60X-IY-jko">
-                                                    <rect key="frame" x="20" y="15" width="31.333333333333332" height="14.333333333333334"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="누적확진자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="60X-IY-jko">
+                                                    <rect key="frame" x="20" y="15" width="52" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -288,13 +288,13 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="deathCell" destination="P8y-QE-iRY" id="nl6-Fi-P4n"/>
-                        <outlet property="newCaseCell" destination="HKE-DG-oUf" id="SCx-Gb-Rqa"/>
+                        <outlet property="deathCell" destination="P8y-QE-iRY" id="ite-2g-x57"/>
+                        <outlet property="newCaseCell" destination="HKE-DG-oUf" id="alC-zI-auo"/>
                         <outlet property="overseasinflowCell" destination="rgI-56-pje" id="svf-ji-mYU"/>
-                        <outlet property="percentageCell" destination="7RB-rM-Ze2" id="iOE-oY-VkH"/>
+                        <outlet property="percentageCell" destination="7RB-rM-Ze2" id="2hI-4j-CiE"/>
                         <outlet property="recoveredCell" destination="2Qu-aA-bq6" id="zwk-gk-vfa"/>
                         <outlet property="regionalOutbreakCell" destination="hr7-9f-Iya" id="oqu-tf-JZq"/>
-                        <outlet property="totalCaseCell" destination="2Qu-aA-bq6" id="7W5-2K-7KQ"/>
+                        <outlet property="totalCaseCell" destination="sZL-q3-eJa" id="jTg-0D-ZhH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiZ-Gp-ahj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
