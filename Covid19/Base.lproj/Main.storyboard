@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pG8-aK-Xzv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,7 +28,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid19" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid19" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +72,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXZ-Wj-Edg" customClass="PieChartView" customModule="Chart">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXZ-Wj-Edg" customClass="PieChartView" customModule="Charts">
                                 <rect key="frame" x="24" y="211.66666666666669" width="345" height="582.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -91,7 +92,7 @@
                     <navigationItem key="navigationItem" id="DW1-M8-nSZ"/>
                     <connections>
                         <outlet property="newCaseLabel" destination="6Xa-GD-rcD" id="435-SG-q75"/>
-                        <outlet property="pieChartView" destination="aXZ-Wj-Edg" id="CIT-5M-Ek5"/>
+                        <outlet property="pieChartView" destination="aXZ-Wj-Edg" id="Oht-Lx-cmA"/>
                         <outlet property="totalCaseLabel" destination="vd2-Js-NdY" id="3Zk-kL-eQj"/>
                     </connections>
                 </viewController>
